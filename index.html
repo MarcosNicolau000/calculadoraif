@@ -5,23 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8a773ce3ea.js" crossorigin="anonymous"></script>
+
+    
 </head>
 
 <body>
 
-    <div id="main">
-        <h1>Calculadora de Notas do IFCE</h1>
-        <p id="nt">Este site foi feito por um aluno, e não tem ligação alguma com a instituição. Com o objetivo de
-            ajudar os alunos a calcular sua nota</p>
-        <div name="calculator">
-            a
-        </div>
-    </div>
+    <header>
+        <h1>Calculadora IFCE</h1>
+
+    </header>
+
+    <main>
+        <form>
+            <section class="inputs-container">
+
+                <span style="margin-bottom: 20px;"> Informe sua nota de N1 abaixo.</span>
+                <input type="number" placeholder="N1" id="N1" min="0" max="10">
+
+            </section>
+            <div>
+
+            </div>
+            </section>
+
+            <button id="btn-login" pys-onClick="click">Calcular</button>
+            <p id="nota"></p>
+        
+            <section class="links-container">
+            
+            </section>
+            
+            
+
+            <footer>
+
+                <span> Este site foi criado com o objetivo de ajudar os alunos do IFCE a calcularem o quanto precisam
+                    para serem aprovados no semestre. </span>
+                <p>Este site foi feito por um aluno e não tem ligação com a instituição IFCE! </p>
+            </footer>
+        </form>
+    </main>
 </body>
 
 </html>
