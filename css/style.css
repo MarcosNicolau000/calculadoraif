@@ -67,6 +67,14 @@ main form {
     flex-direction: column;
 
 }
+main form footer {
+
+    margin-top: 2%;
+    width: 100%;
+    margin-left: -5%;
+    
+}
+
 }
 
 main form .inputs-container {
@@ -160,10 +168,20 @@ main form button:hover {
     background: #fff;
     color: red;
 }
+
+main form p#saida{
+    font-size: 1em;
+    color:  #459e55;
+    margin-top: 5%;
+    margin-left: 5%;;
+}
+
 main form footer {
-    margin-top: 150px;
-    width: 80%;
-    margin-left: 35px;
+    
+    margin-top: 2%;
+    width: 91%;
+    margin-left: 5%;
+    
 }
 main form footer p {
     color: red;

@@ -7,13 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8a773ce3ea.js" crossorigin="anonymous"></script>
 
-    
 </head>
 
 <body>
@@ -24,35 +21,41 @@
     </header>
 
     <main>
-        <form>
-            <section class="inputs-container">
+        <form name="f1N1">
+            <section name="sN1" class="inputs-container">
+                <script>
+                    function calcularN2() {
+                        var n1 = document.getElementById("N1").value;
+                        if (n1 <= 10 && n1 >= 0) {
+                            result = [30 - (n1 * 2)] / 3;
+                            document.getElementById("saida").innerHTML = "Você precisa de: " + result + " para ser aprovado!";
+                        } else {
+                            document.getElementById("saida").innerHTML = "Sua nota tem que um número entre 0 e 10.";
+                        }
 
+
+                    }
+
+                </script>
                 <span style="margin-bottom: 20px;"> Informe sua nota de N1 abaixo.</span>
                 <input type="number" placeholder="N1" id="N1" min="0" max="10">
 
-            </section>
-            <div>
-
-            </div>
-            </section>
-
-            <button id="btn-login" pys-onClick="click">Calcular</button>
-            <p id="nota"></p>
-        
-            <section class="links-container">
             
             </section>
-            
-            
-
+            <button id="btn-login" onClick="calcularN2()" form="">Calcular</button>
+            <p id="saida">Informe um número de 0 a 10</p>
             <footer>
 
-                <span> Este site foi criado com o objetivo de ajudar os alunos do IFCE a calcularem o quanto precisam
-                    para serem aprovados no semestre. </span>
-                <p>Este site foi feito por um aluno e não tem ligação com a instituição IFCE! </p>
+                <span> Este site foi criado com o objetivo de ajudar os alunos do IFCE a calcularem qual nota precisa para serem aprovados no semestre. </span>
+                <p>Este site foi feito por um aluno e não tem ligação oficial com a instituição IFCE! </p>
             </footer>
+            <section>
+                
+            </section>
         </form>
     </main>
+
+
 </body>
 
 </html>
