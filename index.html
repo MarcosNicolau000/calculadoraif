@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora IFCE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    
+
+    <header>
+        <h1>Calculadora IFCE</h1>
+
+    </header>
+
+    <main>
+        <form name="f1N1">
+            <section name="sN1" class="inputs-container">
+                <script>
+                    function calcularN2() {
+                        var n1 = document.getElementById("N1").value;
+                        if (n1 <= 10 && n1 >= 0) {
+                            result = [30 - (n1 * 2)] / 3;
+                            document.getElementById("saida").innerHTML = "Você precisa de: " + result + " para ser aprovado!";
+                        } else {
+                            document.getElementById("saida").innerHTML = "Sua nota tem que um número entre 0 e 10.";
+                        }
+
+
+                    }
+
+                </script>
+                <span style="margin-bottom: 20px;"> Informe sua nota de N1 abaixo. Exemplo(5.19)</span>
+                <input type="number" step=".01" placeholder="N1" id="N1" deci min="0" max="10">
+
+            
+            </section>
+            <button id="btn-login" onClick="calcularN2()" form="">Calcular</button>
+            <p id="saida">Informe um número de 0 a 10</p>
+            <footer>
+
+                <span> Este site foi criado com o objetivo de ajudar os alunos do IFCE a calcularem qual nota precisa para serem aprovados no semestre. </span>
+                <p>Este site foi feito por um aluno e não tem nenhum vínculo oficial com a instituição IFCE! </p>
+            </footer>
+            <section>
+
+            </section>
+        </form>
+    </main>
+
+
 </body>
+
 </html>
