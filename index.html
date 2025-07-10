@@ -28,6 +28,7 @@
                         var n1 = document.getElementById("N1").value;
                         if (n1 <= 10 && n1 >= 0) {
                             result = [30 - (n1 * 2)] / 3;
+                            result = result.toFixed(2);
                             document.getElementById("saida").innerHTML = "Você precisa de: " + result + " para ser aprovado!";
                         } else {
                             document.getElementById("saida").innerHTML = "Sua nota tem que um número entre 0 e 10.";
